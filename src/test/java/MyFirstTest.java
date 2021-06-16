@@ -5,15 +5,14 @@ import java.util.List;
 
 import static org.junit.Assert.*;
 
-
 public class MyFirstTest {
+
     @Test
-    public void isCodeupCodeup() {
+    public void isCodeupCodeUp() {
         String correct = "Codeup";
         String commonly = "CodeUp";
 
         assertNotEquals(correct, commonly);
-
     }
 
     @Test
@@ -26,16 +25,19 @@ public class MyFirstTest {
 
     @Test
     public void arraysAreEqual() {
-        int[] arrayOfInts = {1, 2, 3, 4};
-        int[] yetMoreInts = {1, 2, 3, 4, 8};
+        int[] numbers = {1, 2, 3};
+        int[] otherNumbers = new int[3];
+        otherNumbers[0] = 1;
+        otherNumbers[1] = 2;
+        otherNumbers[2] = 3;
 
-        assertArrayEquals(arrayOfInts, yetMoreInts);
+        assertArrayEquals(numbers, otherNumbers);
     }
-        @Test
-                public void funWithPHP() {
-            String language = "PHP";
-            assertTrue(language.contains("H"));
-            assertFalse(language.contains("J"));
 
+    @Test
+    public void funWithPHP() {
+        String language = "PHP";
+        assertTrue(language.contains("H")); // use assertTrue for this statement
+        assertFalse(language.contains("J")); // use assertFalse for this statement
     }
 }
